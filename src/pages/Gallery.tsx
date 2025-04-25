@@ -20,6 +20,15 @@ const Gallery = () => {
       <div className="container mx-auto px-4 pt-20">
         <h1 className="text-6xl font-bold mb-12 text-center">GALERIJA</h1>
         
+        {/* Featured Image */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <img
+            src="/lovable-uploads/695467e3-22f6-49ea-8758-b0b906c72936.png"
+            alt="Basketball Players Collage"
+            className="w-full h-auto rounded-lg shadow-xl"
+          />
+        </div>
+
         {/* YouTube Video Section */}
         <div className="mb-16">
           <div className="aspect-w-16 aspect-h-9">
@@ -31,15 +40,6 @@ const Gallery = () => {
               className="w-full h-full rounded-lg"
             ></iframe>
           </div>
-        </div>
-
-        {/* Featured Image */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <img
-            src="/lovable-uploads/695467e3-22f6-49ea-8758-b0b906c72936.png"
-            alt="Basketball Players Collage"
-            className="w-full h-auto rounded-lg shadow-xl"
-          />
         </div>
       </div>
     </div>
