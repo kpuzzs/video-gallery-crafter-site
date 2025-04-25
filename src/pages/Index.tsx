@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { cn } from '@/lib/utils';
 
 const Navigation = () => (
   <nav className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-sm">
@@ -10,11 +9,6 @@ const Navigation = () => (
       <ul className="flex justify-end space-x-6 py-4 text-white">
         <li><Link to="/" className="hover:text-gray-300">Sākums</Link></li>
         <li><Link to="/galerija" className="hover:text-gray-300">Galerija</Link></li>
-        <li><Link to="/piedavajums" className="hover:text-gray-300">Piedāvājums</Link></li>
-        <li><Link to="/par-mums" className="hover:text-gray-300">Par mums</Link></li>
-        <li><Link to="/kontakti" className="hover:text-gray-300">Kontakti</Link></li>
-        <li><Link to="/autorizacija" className="hover:text-gray-300">Autorizācija</Link></li>
-        <li><Link to="/sudzibas-forma" className="hover:text-gray-300">Sūdzības forma</Link></li>
       </ul>
     </div>
   </nav>
@@ -29,7 +23,7 @@ const Index = () => {
       <div 
         className="h-screen relative flex items-center justify-center"
         style={{
-          backgroundImage: "url('/lovable-uploads/ffee40aa-efbf-44d3-8314-5330d0b31bb0.png')",
+          backgroundImage: "url('/lovable-uploads/01cfbe85-3a5c-4955-9768-ad03c6278525.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -50,7 +44,7 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-2xl"
           >
-            "No laukuma līdz virsotnnei"
+            "No laukuma līdz virsotnei"
           </motion.p>
         </div>
       </div>

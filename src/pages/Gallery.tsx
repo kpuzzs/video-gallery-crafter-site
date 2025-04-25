@@ -1,10 +1,23 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Navigation = () => (
+  <nav className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-sm">
+    <div className="container mx-auto px-4">
+      <ul className="flex justify-end space-x-6 py-4 text-white">
+        <li><Link to="/" className="hover:text-gray-300">Sākums</Link></li>
+        <li><Link to="/galerija" className="hover:text-gray-300">Galerija</Link></li>
+      </ul>
+    </div>
+  </nav>
+);
 
 const Gallery = () => {
   return (
-    <div className="min-h-screen bg-black text-white pt-20">
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen bg-black text-white">
+      <Navigation />
+      <div className="container mx-auto px-4 pt-20">
         <h1 className="text-6xl font-bold mb-12 text-center">GALERIJA</h1>
         
         {/* YouTube Video Section */}
@@ -20,20 +33,13 @@ const Gallery = () => {
           </div>
         </div>
 
-        {/* Image Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {Array.from({ length: 9 }).map((_, index) => (
-            <div key={index} className="aspect-square relative overflow-hidden group">
-              <img
-                src={`/lovable-uploads/d1d3528a-21e3-4f50-b53e-e6497458991a.png`}
-                alt={`Gallery image ${index + 1}`}
-                className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white text-lg font-bold">View Image</span>
-              </div>
-            </div>
-          ))}
+        {/* Featured Image */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <img
+            src="/lovable-uploads/695467e3-22f6-49ea-8758-b0b906c72936.png"
+            alt="Basketball Players Collage"
+            className="w-full h-auto rounded-lg shadow-xl"
+          />
         </div>
       </div>
     </div>
