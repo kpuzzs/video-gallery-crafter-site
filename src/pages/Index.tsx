@@ -23,7 +23,7 @@ const Index = () => {
       <div 
         className="h-screen relative flex items-center justify-center"
         style={{
-          backgroundImage: "url('/lovable-uploads/9a152df1-3a3e-4cb4-ab78-9ca936324cc2.png')",
+          backgroundImage: "url('/lovable-uploads/d91cdc6c-3933-4e0f-8425-9aaa6fcfe0dd.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
