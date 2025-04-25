@@ -30,14 +30,14 @@ const Gallery = () => {
         </div>
 
         {/* YouTube Video Section */}
-        <div className="mb-16">
+        <div className="max-w-4xl mx-auto mb-16">
           <div className="aspect-w-16 aspect-h-9">
             <iframe
               src="https://www.youtube.com/embed/1FUr4tFyKW0"
               title="Basketball Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="w-full h-full rounded-lg"
+              className="w-full h-[500px] rounded-lg"
             ></iframe>
           </div>
         </div>
