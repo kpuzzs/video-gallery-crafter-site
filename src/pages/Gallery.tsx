@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Navigation = () => (
   <nav className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-sm">
     <div className="container mx-auto px-4">
-      <ul className="flex justify-end space-x-6 py-4 text-white">
+      <ul className="flex justify-end space-x-6 py-4 text-white font-limelight">
         <li><Link to="/" className="hover:text-gray-300">Sākums</Link></li>
         <li><Link to="/galerija" className="hover:text-gray-300">Galerija</Link></li>
       </ul>
@@ -15,10 +15,10 @@ const Navigation = () => (
 
 const Gallery = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white font-limelight">
       <Navigation />
       <div className="container mx-auto px-4 pt-20">
-        <h1 className="text-6xl font-bold mb-12 text-center">GALERIJA</h1>
+        <h1 className="text-6xl font-bold mb-12 text-center font-limelight">GALERIJA</h1>
         
         {/* Featured Image */}
         <div className="max-w-4xl mx-auto mb-16">
